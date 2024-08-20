@@ -3,28 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asher Yungreiz - Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Asher Yingreiz</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="hume.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="intro">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Hello! I'm a software engineer specializing in Python and web development. Here, you can find some of the projects I've worked on.</p>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Asher Yungreiz. Welcome to my portfolio website. Here you can find information about my projects, resume, and how to contact me.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A multiplayer trivia game with a server side and a client side
+                </p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Generate and validate Israeli ID numbers using iterators and generators.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>GroupChatManager is a chat project designed to support group chat and private conversations between users. The project includes a server based on Flask with Socket.IO support for real-time communication and a client using Socket.IO to interact with the server.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>You can download my resume <a href="resume.pdf" download>here</a>.</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Asher Yungreiz</p>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
 </body>
 </html>
